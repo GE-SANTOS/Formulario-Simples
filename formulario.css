@@ -86,6 +86,14 @@ body{
 
     /* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
 
+    
+    .campo input[type="text"], .campo input[type="cnpj/cpf"], .campo select, .campo textarea{
+        padding: 0.2em;
+        border:#00008B;
+        box-shadow: 2px 2px 2px rgb(0,0,0.2);
+        display: block;
+    }
+
     .campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
         padding: 0.2em;
         border:#00008B;
@@ -100,6 +108,41 @@ body{
         display: block;
     }
 
+    .campo input[type="text"], .campo input[type="endereço"], .campo select, .campo textarea{
+        padding: 0.2em;
+        border:#00008B;
+        box-shadow: 2px 2px 2px rgb(0,0,0.2);
+        display: block;
+        
+    }
+
+    .campo input[type="text"], .campo input[type="bairro"], .campo select, .campo textarea{
+        padding: 0.2em;
+        border:#00008B;
+        box-shadow: 2px 2px 2px rgb(0,0,0.2);
+        display: block;
+    }
+
+    .campo input[type="text"], .campo input[type="cep"], .campo select, .campo textarea{
+        padding: 0.2em;
+        border:#00008B;
+        box-shadow: 2px 2px 2px rgb(0,0,0.2);
+        display: block;
+    }
+
+    .campo input[type="text"], .campo input[type="cidade"], .campo select, .campo textarea{
+        padding: 0.2em;
+        border:#00008B;
+        box-shadow: 2px 2px 2px rgb(0,0,0.2);
+        display: block;
+    }
+
+    .campo input[type="text"], .campo input[type="estado"], .campo select, .campo textarea{
+        padding: 0.2em;
+        border:#00008B;
+        box-shadow: 2px 2px 2px rgb(0,0,0.2);
+        display: block;
+    }
     /* Elementos de classe "campo" de tag <select> e <option>*/
 
     .campo select option{

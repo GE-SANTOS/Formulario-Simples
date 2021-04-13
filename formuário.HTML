@@ -15,8 +15,8 @@
 
     <! - Cabeçalho com título e subtítulo (ambos com css de id "titulo") ->
     <div>
-        <h1 id="titulo">Cadastro de Clientes</h1><br>
-        
+        <h1 id="titulo">Cadastro do Cliente</h1><br>
+        <p  id = " subtitulo "> Informe seus dados: </p ><br>
     </div>  
     
     <! - Início do formulário ->
@@ -35,6 +35,11 @@
                     <input type="text" name="sobrenome" id="sobrenome" required>
                     </div>
             </fieldset>
+            <! - Campo de CNPJ/CPF com ->
+            <div class="campo">
+                <label for="cnpj/cpf"><strong>CNPJ/CPF</strong></label>
+                <input type="cnpj/cpf" name="cnpj/cpf" id="cnpj/cpf" required>
+                </div>
 
             <! - Campo de celular com ->
             <fieldset class="grupo">
@@ -46,65 +51,89 @@
             <! - Campo de email com ->
             <div class="campo">
                 <label for="email"><strong>Email</strong></label>
-                <input type="email" name="email" id="email" required><br>
+                <input type="email" name="email" id="email" required>
             </div>
             </fieldset>
-
+            <! - Campo de endereço com ->
             <div class="campo">
                 <label for="endereço"><strong>Endereço</strong></label>
-                <input type="endereço" name="endereço" id="endereço" required><br>
+                <input type="endereço" style="width:26em" name="endereço" id="endereço" required>  
             </div>
+            <! - Campo de bairro com ->
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="bairro"><strong>Bairro</strong></label>
+                    <input type="bairro" name="bairro" id="bairro" required>
+                </div>
+    
+                <! - Campo de CEP com ->
+                <div class="campo">
+                    <label for="cep"><strong>CEP</strong></label>
+                    <input type="cep" name="cep" id="cep" required>
+                </div>
+                </fieldset>
+
+                <! - Campo de cidade com ->
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="cidade"><strong>Cidade</strong></label>
+                    <input type="cidade" name="cidade" id="cidade" required>
+                </div>
+    
+                <! - Campo de estado com ->
+                <div class="campo">
+                    <label for="estado"><strong>Estado</strong></label>
+                    <input type="estado" name="estado" id="estado" required>
+                </div>
+                </fieldset>
 
             <! - Campo de desenvolvimento web com 3 opções de botões selecionáveis ​​(botão de opção) e css de classe "campo" ->
             <div class="campo">
-                <label><strong>De qual lado da aplicação você desenvolve?</strong></label><br><br>
+                <label><strong>Informe o seu plano:</strong></label><br><br>
                 <label>
-                    <input type="radio" name="devweb" value="frontend"checked>Front-end
+                    <input type="radio" name="cliente" value="basic"checked>Basic
                 </label><br><br>
                 <label>
-                    <input type="radio" name="devweb" value="backend">Back-end  
+                    <input type="radio" name="devweb" value="super">Super
                 </label><br><br>
                 <label>
-                    <input type="radio" name="devweb" value="fullstak">Fullstak
+                    <input type="radio" name="devweb" value="vip">Vip
                 </label><br>
             </div>
 
             <! - Campo de senioridade com 3 opções para escolha (selecionar opção) e css de classe "campo" ->
             <div>
-                <label for="senioridade"><strong>senioridade</strong></label>
-                <select id="senioridade">
+                <label for="dependentes"><strong>dependentes</strong></label>
+                <select id="dependentes">
                     <option selected disabled value="">selecione</option>
-                    <option>Junior</option>
-                    <option>Pleno</option>
-                    <option>Senior</option>
+                    <option>1 dependente</option>
+                    <option>2 dependentes</option>
+                    <option>3 dependentes</option>
                 </select><br><br>
             </div>
 
             <fieldset class="grupo">
                 <! - Campo de tecnologias para escolha de 1 ou mais opções para marcar (caixa de seleção) e css de classe "campo" ->
                 <div id="check"> 
-                    <rótulo><strong>Selecione as tecnologias que você utiliza:</rótulo></label><br><br>
-                    <input type="checkbox" id="tenologia1" name="tenologia1" value="HTML">
-                    <label for="tecnologia1">HTML</label>
-                    <input type="checkbox" id="tenologia2" name="tenologia2" value="CSS">
-                    <label for="tecnologia2">CSS</label>
-                    <input type="checkbox" id="tenologia3" name="tenologia3" value="Javascript">
-                    <label for="tecnologia3">Javascript</label>
-                    <input type="checkbox" id="tenologia4" name="tenologia4" value="PHP">
-                    <label for="tecnologia4">PHP</label>
-                    <input type="checkbox" id="tenologia5" name="tenologia5" value="C#">
-                    <label for="tecnologia5">C#</label>
-                    <input type="checkbox" id="tenologia6" name="tenologia6" value="Python">
-                    <label for="tecnologia6">Python</label>
-                    <input type="checkbox" id="tenologia7" name="tenologia7" value="Java">
-                    <label for="tecnologia7">Java</label>
+                    <rótulo><strong>Selecione o tipo de hotel:</rótulo></label><br><br>
+                    <input type="checkbox" id="opção1" name="opção1" value="1 estrela">
+                    <label for="opção1">⭐Estrela</label>
+                    <input type="checkbox" id="opção2" name="opção2" value="2 estrelas">
+                    <label for="opção2">⭐⭐Estrelas</label>
+                    <input type="checkbox" id="opção3" name="opção3" value="3 estrelas">
+                    <label for="opção3">⭐⭐⭐Estrelas</label>
+                    <input type="checkbox" id="opção4" name="opção4" value="4 estrelas">
+                    <label for="opção4">⭐⭐⭐⭐Estrelas</label>
+                    <input type="checkbox" id="opção5" name="opção5" value="5 estrelas">
+                    <label for="opção5">⭐⭐⭐⭐⭐Estrelas</label>
+                   
                 </div>
             </fieldset>
             
             <! - Caixa de texto ->
             <div class="campo">
                 <br>
-                <label for="experiencia"><strong>Conte um pouco da sua experiência:</strong></label>
+                <label for="experiencia"><strong>Observações:</strong></label>
                 <textarea row="6" style="width:30em;height:6em" id="experiencia" nome="experiencia"></textarea>
             </div>
 
